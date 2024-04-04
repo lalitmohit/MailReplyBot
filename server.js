@@ -59,11 +59,11 @@ bot.command("generate", async (ctx) => {
   // store token count
   // send response
   const from = ctx.update.message.from;
-  await sleep(1000);
+  // await sleep(1000);
   const events = await eventsModel.find({
     tgId: from.id,
   });
-  await sleep(1000);
+  // await sleep(1000);
   console.log(
     events
       .slice(-1)
